@@ -1,24 +1,21 @@
+import React from "react";
 import type { NextPage } from "next";
-import { Meta, Nav } from "components";
-import { useRouter } from "next/router";
-import { pages, siteInfo, navLinks } from "data";
+import pages from "config/data/page.data";
+import Meta from "components/Meta/Meta.component";
 
 const Home: NextPage = () => {
-  const { pathname } = useRouter();
-
   return (
     <div>
       <Meta
-        title={pages.index.title}
-        url={`${siteInfo.url}${pathname}`}
-        description={pages.index.description}
-        siteName={siteInfo.siteName}
-        favicon={siteInfo.favicon}
+        title={pages.homePage.title}
+        description={pages.homePage.description}
+        favicon={pages.homePage.favicon}
+        url={pages.homePage.slug}
       />
-      <Nav links={navLinks} />
       <main />
       <footer />
     </div>
   );
 };
+
 export default Home;
