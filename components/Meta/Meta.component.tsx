@@ -16,9 +16,8 @@ const Meta: React.FC<MetaProps> = ({
   description,
   siteName,
   favicon,
-  ...rest
 }) => (
-  <Head {...rest}>
+  <Head>
     <meta name="robots" content="index, follow" />
     <title>{title}</title>
     <meta name="twitter:title" content={title} />

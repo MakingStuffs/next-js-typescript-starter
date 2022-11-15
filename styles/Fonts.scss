@@ -1,6 +1,42 @@
 @font-face {
-  font-family: Montserrat;
-  src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype"),
-    url("/assets/fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
+  font-family: Ubuntu;
+  src: url("/assets/fonts/Ubuntu-Bold.ttf") format("truetype");
   font-display: swap;
+  font-style: bold;
+  font-weight: 900;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url("/assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url("/assets/fonts/Ubuntu-Light.ttf") format("truetype");
+  font-display: swap;
+  font-style: light;
+  font-weight: 100;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url("/assets/fonts/Ubuntu-Italic.ttf") format("truetype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url("/assets/fonts/Ubuntu-LightItalic.ttf") format("truetype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 100;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url("/assets/fonts/Ubuntu-BoldItalic.ttf") format("truetype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 900;
 }

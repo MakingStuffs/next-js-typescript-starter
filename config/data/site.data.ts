@@ -6,12 +6,10 @@ type SiteInfo = {
   url: string;
 };
 
-const siteInfo: SiteInfo = {
+export const siteInfo: SiteInfo = {
   name: "Website",
   description: "This is a website",
-  favicon: "/assets/images/favicon.icon",
-  socialImage: "/assets/images/social-image.jpg",
+  favicon: "/favicon.ico",
+  socialImage: "/next-js-starter-template-cover.jpeg",
   url: process.env.NEXT_PUBLIC_BASE_URL || "https://github.com/makingstuffs",
 };
-
-export default siteInfo;
