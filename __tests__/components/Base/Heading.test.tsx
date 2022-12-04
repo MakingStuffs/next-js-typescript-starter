@@ -7,7 +7,7 @@ const STYLE = { background: "red" };
 const TEST_ID = "heading-test";
 const CONTENT = "The heading";
 
-describe("<Component />", () => {
+describe("<Heading />", () => {
   it("will render the correct attributes", () => {
     const { baseElement } = render(
       <Heading

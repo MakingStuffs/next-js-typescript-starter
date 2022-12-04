@@ -5,11 +5,11 @@ const ID = "component";
 const CLASS = "component";
 const STYLE = { background: "red" };
 const TEST_ID = "test-id";
-const HREF = "/something";
+const HREF = "http://localhost/something";
 const TITLE = "title";
 const LABEL = "Link";
 
-describe("<Component />", () => {
+describe("<Anchor />", () => {
   it("will render the correct attributes", () => {
     const { baseElement } = render(
       <Anchor
@@ -25,7 +25,7 @@ describe("<Component />", () => {
     const byTestId = screen.getByTestId<HTMLAnchorElement>(TEST_ID);
     const byId = baseElement.querySelector<HTMLElement>(`#${ID}`);
     const byClass = baseElement.querySelector<HTMLElement>(`.${CLASS}`);
-    const byLabel = screen.getAllByText(LABEL);
+    const byLabel = screen.getByText(LABEL);
     [byTestId, byClass, byId, byLabel].forEach((item) =>
       expect(item).toBeInTheDocument()
     );

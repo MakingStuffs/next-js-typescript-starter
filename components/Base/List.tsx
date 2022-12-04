@@ -5,7 +5,8 @@ interface ListProps {
   style?: React.CSSProperties;
   id?: string;
   children: React.ReactNode;
-  listType: "ol" | "ul";
+  listType?: "ol" | "ul";
+  testId?: string;
 }
 
 const List: React.FC<ListProps> = ({
@@ -13,11 +14,12 @@ const List: React.FC<ListProps> = ({
   id,
   style,
   children,
-  listType,
+  listType = "ul",
+  testId,
 }) => {
   const ListTag: keyof JSX.IntrinsicElements = `${listType}`;
   return (
-    <ListTag style={style} className={className} id={id}>
+    <ListTag data-testid={testId} style={style} className={className} id={id}>
       {children}
     </ListTag>
   );
@@ -27,6 +29,8 @@ List.defaultProps = {
   className: undefined,
   style: undefined,
   id: undefined,
+  testId: undefined,
+  listType: "ul",
 };
 
 export { List };

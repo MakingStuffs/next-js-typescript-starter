@@ -25,17 +25,18 @@ const Anchor: React.FC<AnchorProps> = ({
   style,
 }) => {
   return (
-    <Link
-      style={style}
-      className={className}
-      id={id}
-      href={href}
-      title={title}
-      rel={rel}
-      target={target}
-      data-testid={testId}
-    >
-      {label}
+    <Link rel={rel} href={href}>
+      <a
+        href={href}
+        style={style}
+        className={className}
+        id={id}
+        title={title}
+        target={target}
+        data-testid={testId}
+      >
+        {label}
+      </a>
     </Link>
   );
 };

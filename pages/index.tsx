@@ -2,8 +2,8 @@ import React from "react";
 import type { NextPage } from "next";
 import pages from "config/data/page.data";
 import { Meta } from "components/Meta/Meta";
-import Image from "next/image";
 import logo from "public/making-stuffs-logo-new-150.png";
+import { Picture } from "components/Base/Picture";
 
 const Home: NextPage = () => {
   return (
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
             width: "100vw",
           }}
         >
-          <Image src={logo} width={75} height={75} layout="fixed" />
+          <Picture src={logo} width={75} height={75} layout="fixed" />
           <h1 style={{ color: "#f2f2f2", marginBottom: 0 }}>Next JS Starter</h1>
           <p style={{ color: "#f2f2f2" }}>Happy building!</p>
         </div>
