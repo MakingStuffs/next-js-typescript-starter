@@ -17,18 +17,22 @@
   },
   "rules": {
     "import/prefer-default-export": "off",
+    "react/button-has-type": "off",
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "exceptions": ["Component"]
+      }
+    ],
     "react/function-component-definition": [
       "error",
       {
         "namedComponents": "arrow-function",
         "unnamedComponents": "arrow-function"
       }
-    ],
-    "react/button-has-type": "off",
-    "no-param-reassign": 0
+    ]
   },
   "overrides": [
-    // Only uses Testing Library lint rules in test files
     {
       "plugins": [
         "plugin:testing-library/react",
